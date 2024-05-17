@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "stepik-sample-parser"
+version = "0.1.0"
+description = ""
+authors = ["Marcel Dio <marceldiomare@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+useragent = "^0.1.1"
+fake-useragent = "^1.5.1"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
