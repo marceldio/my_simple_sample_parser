@@ -1,10 +1,9 @@
-# import requests
-# URL = "https://parsinger.ru/video_downloads/"
-# response = requests.get(url=URL, stream=True)
-# # with open('videoplayback.mp4', 'wb') as video:
-# with open('file.mp4', 'wb') as video:
-#     for piece in response.iter_content(chunk_size=100000):
-#         video.write(piece)
+# Задача:
+#     Перейдите на сайт
+#     Скачайте видео с сайта  при помощи requests
+#     Определите его размер вручную
+
+
 
 import requests
 
