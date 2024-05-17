@@ -15,3 +15,7 @@
 
 import requests
 
+URL = "https://parsinger.ru/3.4/1/json_weather.json"
+response = requests.get(URL)
+
+
