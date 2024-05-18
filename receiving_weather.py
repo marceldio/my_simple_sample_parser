@@ -44,6 +44,5 @@ else:
             if temp < int(min_temp):
                 min_temp = temp
                 min_temp_date = date
-
     # вывод даты и минимальной температуры
     print(min_temp_date, min_temp)
