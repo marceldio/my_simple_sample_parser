@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "stepik-sample-parser"
+name = "my_simple_sample_parser"
 version = "0.1.0"
 description = ""
 authors = ["Marcel Dio <marceldiomare@gmail.com>"]
