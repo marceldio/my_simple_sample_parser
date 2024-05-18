@@ -15,7 +15,34 @@
 
 import requests
 
+# URL погодного сервиса
 URL = "https://parsinger.ru/3.4/1/json_weather.json"
+
+# Выполнение GET-запроса
 response = requests.get(URL)
 
+# Проверка статуса ответа
+if response.status_code != 200:
+    print(f'Ошибка получения данных: {response.status_code}')
+else:
+    # Преобразование JSON-ответа в Python-объект
+    weather_data = response.json()
 
+    # Инициализация переменных для хранения минимальной температуры и соответствующей даты
+    min_temp = "0"
+    min_temp_date = None
+
+    # Проход по всем записям и поиск минимальной температуры
+    for record in weather_data:
+        try:
+            temp = int(record['Температура воздуха'].strip("°C"))
+            date = record['Дата']
+        except ValueError:
+            print(f"Ошибка")
+            continue
+        else:
+            if temp < int(min_temp):
+                min_temp = temp
+                min_temp_date = date
+
+    print(min_temp_date, min_temp)
